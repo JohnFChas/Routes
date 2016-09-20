@@ -1,0 +1,11 @@
+- Skapa en hemsida med AngularJS och routing.
+- Hemsidan ska ha en view med en lista som är knuten till en modell av typen array i controllern.
+	- Varje objekt ska ha minst två parametrar, till exempel title och body (brödtext). Ni får ha fler om ni vill.
+	- Man ska kunna lägga till nya objekt och ta bort gamla.
+- Man ska kunna klicka på varje objekt i listan och komma till en egen sida för det objektet.
+	- Man ska kunna redigera gamla objekt.
+- Alla ändringar ska “sparas” för sessionen, men ingenting behöver sparas mellan sessioner (inget behöver sparas om man laddar om sidan till exempel, tips: använd main controller).
+
+	-= EXTRAUPPGIFTER =-
+- Skriva kommentarer på varje enskilt objekt i listan
+- Spara alla ändringar mellan sessioner (om man stänger av webbläsaren och öppnar sidan igen ska alla ändringar finnas kvar)
