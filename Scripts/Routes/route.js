@@ -20,6 +20,12 @@ angular.module("blogModule")
                     templateUrl: "Views/About.html",
                     controller: "AboutController",
                     caseInsensitiveMatch: true
+                })
+
+                .when("/Post/:id", {
+                    templateUrl: "Views/Post.html",
+                    controller: "PostController",
+                    caseInsensitiveMatch: true
                 });
         }
     ]);

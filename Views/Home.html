@@ -1,1 +1,6 @@
 ﻿<h1 ng-bind="title"></h1>
+
+<div ng-repeat="post in posts track by $index">
+    <h2 ng-bind="post.title" ng-click="go('/Post/' + post.id)"></h2>
+    <p ng-bind="post.body"></p>
+</div>
