@@ -3,7 +3,12 @@
 angular.module("blogModule")
     .controller("MainController", [
         "$scope",
-        function ($scope) {
+        "$location",
+        function ($scope, $location) {
+
+            $scope.go = function (url) {
+                $location.path(url);
+            }
 
         }
     ]);

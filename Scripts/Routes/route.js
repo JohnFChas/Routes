@@ -12,12 +12,14 @@ angular.module("blogModule")
 
                 .when("/", {
                     templateUrl: "Views/Home.html",
-                    controller: "HomeController"
+                    controller: "HomeController",
+                    caseInsensitiveMatch: true
                 })
 
                 .when("/About", {
                     templateUrl: "Views/About.html",
-                    controller: "AboutController"
+                    controller: "AboutController",
+                    caseInsensitiveMatch: true
                 });
         }
     ]);

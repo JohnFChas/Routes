@@ -7,20 +7,21 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Routes", ".", "{315E2F32-00
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_60006"
-		Debug.AspNetCompiler.PhysicalPath = "..\..\..\..\ownCloud\Lernia\Webbklient\git\Routes\"
+		Debug.AspNetCompiler.PhysicalPath = "..\Routes\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60006\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.VirtualPath = "/localhost_60006"
-		Release.AspNetCompiler.PhysicalPath = "..\..\..\..\ownCloud\Lernia\Webbklient\git\Routes\"
+		Release.AspNetCompiler.PhysicalPath = "..\Routes\"
 		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60006\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "60006"
+		SlnRelativePath = "..\Routes\"
 	EndProjectSection
 EndProject
 Global
