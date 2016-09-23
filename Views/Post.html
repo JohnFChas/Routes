@@ -1,2 +1,17 @@
 ﻿<h1 ng-bind="post.title"></h1>
 <p ng-bind="post.body"></p>
+
+<div ng-repeat="comment in post.comments track by $index">
+    <h4 ng-bind="comment.author"></h4>
+    <p ng-bind="comment.body"></p>
+</div>
+
+<form ng-submit="addComment()">
+    <label for="comment-author">Author:</label><br />
+    <input type="text" id="comment-author" ng-model="newComment.author" /><br />
+
+    <label for="comment-body">Body:</label><br />
+    <input type="text" id="comment-body" ng-model="newComment.body" /><br />
+
+    <button type="submit">Add comment</button>
+</form>

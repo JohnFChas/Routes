@@ -7,16 +7,21 @@ angular.module("blogModule")
         function ($scope, $location) {
             $scope.posts = [];
 
-            for (var i = 0; i < 10; i++) {
-                $scope.posts.push({
-                    id: i + 1,
-                    title: "Post " + (i + 1),
-                    body: "Post " + (i + 1) + " body"
-                });
+            $scope.savePosts = function () {
+                var jsonString = JSON.stringify($scope.posts);
+                localStorage.setItem("posts", jsonString);
+            }
+
+            $scope.loadPosts = function () {
+                var data = localStorage.getItem("posts");
+                if (data)
+                    $scope.posts = JSON.parse(data);
             }
 
             $scope.go = function (url) {
                 $location.path(url);
             }
+
+            $scope.loadPosts();
         }
     ]);
